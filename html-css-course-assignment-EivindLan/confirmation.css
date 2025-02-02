@@ -1,0 +1,48 @@
+.content {
+    display: grid;
+    padding-top: 10%;
+    min-height: 100vh;
+    gap: 10%;
+    grid-template-areas:
+    'h1'
+    'logo'
+    'h2'
+    'button';
+}
+
+h1 {
+    grid-area: h1;
+    display: flex;
+    justify-self: center;
+}
+
+h2 {
+    grid-area: h2;
+    display: flex;
+    justify-self: center;
+}
+
+.Logo {
+    grid-area: logo;
+    display: flex;
+    justify-self: center;
+}
+
+#BrowseButton {
+    grid-area: button;
+    display: flex;
+    justify-self: center;
+}
+
+@media all and (max-width: 1200px) {
+    #BrowseButton {
+        width: 170px;
+        height: 30px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .Logo {
+        width: 70%;
+    }
+}

@@ -1,0 +1,276 @@
+/* Colour palette
+#1B203D
+#3D1B31
+#3D381B
+#1B3D27
+*/
+
+/* Background image */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(/html-css-course-assignment-EivindLan/assets/images/Background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+main {
+    display: grid;
+    grid-area: Main;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'Main'
+    'footer';
+    row-gap: 30%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-template-rows: auto auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 2.5em;
+    color: #1B203D;
+}
+
+p { 
+    text-align: center;
+    font-size: 1.5em;
+    color: #1B203D;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    color: white;
+    padding-top: 100px;
+}
+
+.content-wrapper {
+    display: grid;
+    height: 100%;
+}
+
+.navbar img {
+    width: 3.2em;
+    height: auto;
+    
+}
+
+#Basket {
+    width: 2.1em;
+}
+
+
+/* theese are the grid settings */
+
+
+
+.buttons {
+    background-color: #1B203D;
+    border-radius: 5px;
+    padding: 25px 50px;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.add2Basket {
+    background-color: #1B203D;
+    border-radius: 5px;
+    padding: 25px 50px;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #1B203D;
+    border-radius: 5px;
+    padding: 25px 50px;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    margin-top: auto;
+    font-size: 1.5em;
+    align-items: center;
+    padding: 0;
+    flex-wrap:wrap;
+    width: 100%;
+    background-color: #1B203D;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    
+}
+
+.footer img {
+    z-index: 1;
+    width: 50px;
+}
+
+.footer a:hover {
+    background: #1B3D27;
+}
+.footerNav {
+    width: 100%;
+}
+.footerUl {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    list-style-type: none; 
+    margin: 0;
+  }
+  
+.footerNav li {
+    text-align: center;
+  }
+
+.navbar ul {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    list-style: none;
+    padding-left: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    background-color: #1B203D;
+    height: 80px;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background: #1B3D27;
+}
+
+ 
+ @media all and (max-width: 1100px) {
+    h1, h2, h3 {
+     font-size: 170%;
+    }
+
+    .grid-container {
+     row-gap: 60%;
+    }
+ }
+ 
+ @media all and (max-width: 900px) {
+     .grid-container {
+         margin-top: 10%;
+     }
+     main {
+         row-gap: 20%;
+     }
+
+     .footer img {
+         width: 30%;   
+     }
+ 
+     .footer .buttons {
+         padding: 25px 7px;
+         font-size: 60%;
+     }
+ 
+ }
+ 
+ @media all and (max-width: 600px) {
+     .grid-container {
+         row-gap: 100%;
+     }
+ }
+ 
+ @media all and (max-width: 450px) {
+     .grid-container {
+         margin-top: 10%;
+     }
+ 
+     main {
+          row-gap: 30%;
+     }
+ 
+     body {
+         max-width: 100%;
+     }
+ 
+     h1, h2, h3 {
+         font-size: 70%;
+        }
+ 
+     .footer img {
+         width: 30%;
+         
+     }
+ 
+     .footer .buttons {
+         padding: 25px 7px;
+         font-size: 60%;
+     }
+ }
+ 
+ @media all and (max-width: 900px) {
+    h1, h2, h3 {
+        font-size: 1.25em;
+    }
+    .footer img {
+        width: 30%;
+        
+    }
+
+    .footer .buttons {
+        padding: 25px 7px;
+        font-size: 60%;
+    }
+
+    
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        height: 40px;
+    }
+    h1, h2, h3 {
+        font-size: 0.75 em;
+    }
+    .grid-container {
+        row-gap: 50%;
+    }
+    
+    
+}
+
+
+
+

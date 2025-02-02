@@ -1,0 +1,74 @@
+#FoundersPhoto {
+    grid-area: Founders;
+    display: flex;
+    justify-self: center;
+    width: 50%;
+    height: auto;
+}
+
+h1, h2, h3, h4, figcaption {
+    display: flex;
+    justify-self: center;
+}
+
+h1 {
+    grid-area: h1;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+h3 {
+    grid-area: h3;
+}
+
+h4 {
+    grid-area: h4;
+}
+
+figcaption {
+    display: flex;
+    color: #1B203D;
+}
+
+main {
+    padding-top: 10%;
+    gap: 0%;
+    grid-template-areas: 
+    'h1'
+    'Founders'
+    'h2'
+    'h3'
+    'h4';
+}
+
+@media all and (max-width: 1500px) {
+    h1, h2, h3, h4 {
+        font-size: 150%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    h1, h2, h3, h4 {
+        font-size: 120%;
+    }
+
+    figcaption {
+        font-size: 70%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    h1, h2, h3, h4 {
+        font-size: 60%;
+    }
+
+    figcaption {
+        font-size: 40%;
+    }
+    
+    .grid-container {
+        row-gap: 100%;
+    }
+}

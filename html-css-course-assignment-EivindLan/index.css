@@ -1,0 +1,103 @@
+.grid-container {
+    padding-top: 10%;
+}
+
+.hContent img {
+    width: 20%;
+    height: auto;
+
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    grid-area: Header1;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+}
+
+.gameContent img {
+    width: 75%;
+    height: auto;
+}
+
+.gameContent {
+    grid-area: gameContent1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+    text-align: center;
+    
+}
+
+/* Grid for the head section */
+
+.hContent {
+    display: flex;
+    flex-direction: column;
+    grid-area: Headers;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 5%;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    'Header1 Header1'
+    'Header2 Image';
+}
+
+/* The grid for Main content. Standard configurations are defined in general.css */
+.filter-buttons {
+    gap: 3%;
+    display: flex;
+    grid-area: filter-buttons;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-area: Main;
+    grid-template-areas: 
+    'Headers'
+    'filter-buttons'
+    'gameContent1'
+    'gameContent2';
+    row-gap: 5%;
+}
+
+@media all and (max-width: 900px) {
+    .footer img {
+        width: 30%;
+        
+    }
+
+    .footer .buttons {
+        padding: 25px 7px;
+        font-size: 60%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .grid-container {
+        row-gap: 100%;
+        padding-top: 25%;
+    }
+    
+    main {
+        row-gap: 40%;
+    }
+
+    .hContent {
+        row-gap: 20%;
+    }
+
+}

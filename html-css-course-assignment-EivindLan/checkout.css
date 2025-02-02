@@ -1,0 +1,135 @@
+#basket-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    align-items: center;
+
+}
+
+.basket-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket-item img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ping_pong_game {
+    grid-area: ping;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    width: 40%;
+    height: auto;
+}
+
+.super_duper_game {
+    grid-area: super;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    width: 40%;
+    height: auto;
+
+}
+
+main {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main div {
+    gap: 10%;
+}
+
+
+
+h2, h3, h4, h5 {
+    font-size: 200%;
+    justify-self: center;
+
+}
+
+p {
+    font-size: 200%;
+}
+
+h1 {
+    display: flex;
+    grid-area: h1;
+    justify-self: center;
+}
+
+h2 {
+    display: flex;
+    grid-area: h2;
+}
+
+h3 {
+    display: flex;
+    grid-area: h3;
+    padding-top: 10%;
+}
+
+h4 {
+    display: flex;
+    grid-area: h4;
+    margin-top: 10%;
+}
+
+
+
+#Continue {
+    display: flex;
+    grid-area: continue;
+    justify-self: left;
+    max-height: 50px;
+}
+
+@media all and (max-width: 1100px){
+    .grid-container {
+        row-gap: 100%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .grid-container {
+        row-gap: 70%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    h1, h2, h3, h4 {
+        font-size: 80%;
+    }
+
+    .GameInfo {
+        row-gap: 10%;
+    }
+
+    #Continue {
+        padding: 5px 5px;
+        font-size: 60%;
+    }
+
+    .grid-container {
+        row-gap: 120%;
+    }
+
+
+}
+
+@media all and (max-width: 400px) {
+    .grid-container {
+        row-gap: 80%;
+    }
+}
+

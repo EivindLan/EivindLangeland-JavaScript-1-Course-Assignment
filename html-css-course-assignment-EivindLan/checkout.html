@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="general.css" rel="stylesheet" />
+    <link href="checkout.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/GameHub_Logo.png"/>
+    <title>My first project | shoppingcart</title>
+    <meta name="description" content="shoppingcart, find your online games here with good prices"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li>
+            <a href="index.html" class="homepagebutton">
+              <img src="assets/images/GameHub_Logo.png" alt="GameHub Logo"id="Gamehub_Logo"/>
+            </a>
+          </li>
+          <li>
+            <a href="shoppingcart.html" class="shoppingcart">
+              <img src="assets/images/Basket.png" alt="Basket" id="Basket"/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="grid-container">
+      <main>
+        <h1>Your cart:</h1>
+        <section id="basket-items">
+        </section>
+        <h4>Total price: </h4>
+        <h5 id="totalPrice"></h5>
+        <button onclick="window.location.href='confirmation.html'">Check-out</button>
+      </main>
+
+      <footer class="footer">
+        <nav class="footerNav">
+          <ul class="footerUl" id="footerUl">
+            <li>
+              <a href="contact-us.html" class="buttons" id="contact">Contact</a>
+            </li>
+            <li>
+              <a href="about-us.html" class="buttons" id="about">About</a>
+            </li>
+            <li>
+              <a href="https://twitter.com" class="buttons" id="twittericon">
+                <img src="assets/images/icons8-twitter-96.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" class="buttons" id="instagram icon">
+                <img src="assets/images/icons8-instagram-96.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" class="buttons" id="facebookicon">
+                <img src="assets/images/icons8-facebook-96.png">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="checkout.js"></script>
+  </body>
+</html>
